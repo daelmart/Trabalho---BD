@@ -54,7 +54,13 @@ def print_result(conn, query):
 def main():
 	conexao=LigarBd()
 	while True:
-		sqlcmd=input("SQL Query(write 'exit' to end)>")
+		# sqlcmd=input("SQL Query(write 'exit' to end)>")
+		sqlcmd=input("""--------------------------\n
+				Sistema de Gestão ao Cliente/Fornecedor\n
+				Cliente - 1\n
+				Profissional - 2\n
+				Registar - 3\n
+				Sair - escreva "exit" \n""")
 		if sqlcmd == "exit":
 			sys.exit()
 		print_result(conexao, sqlcmd)
