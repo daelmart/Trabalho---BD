@@ -1,2 +1,3 @@
 # eliminar os db para se criar com o .sql depois
 *.db
+*.zip
